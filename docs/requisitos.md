@@ -1,20 +1,25 @@
-# Requisitos do Sistema
+# Levantamento de Requisitos
 
-## Requisitos Funcionais Principais
-- Cadastrar cinemas com nome, endereço e capacidade.
-- Cadastrar filmes com título, duração, gênero, elenco e diretores.
-- Criar sessões vinculando filme, cinema, data e horário.
-- Registrar o público de uma sessão.
-- Consultar sessões por cinema e por filme.
-- Consultar total de público por sessão, por filme e por cinema.
-- Consultar dados completos de um filme.
+## Requisitos Funcionais (RF)
 
-## Regras de Negócio Essenciais
-- Cada sessão pertence a um filme e a um cinema.
-- Um cinema pode ter várias sessões no mesmo dia.
-- O horário da sessão deve respeitar a duração do filme.
-- Deve existir um intervalo mínimo entre sessões do mesmo cinema.
-- A quantidade registrada de público não pode ultrapassar a capacidade do cinema.
-- O total de público de um filme é a soma dos públicos de todas as suas sessões.
-- O total de público de um cinema é a soma dos públicos de todas as sessões daquele cinema.
-- Um filme pode ter vários gêneros, elenco e diretores.
+- **RF01**: Cadastrar cinemas  
+- **RF02**: Cadastrar filmes  
+- **RF03**: Cadastrar sessões  
+- **RF04**: Registrar público por sessão  
+- **RF05**: Consultar filmes em cartaz por cinema  
+- **RF06**: Consultar público total:
+  - por sessão  
+  - por filme  
+  - por cinema  
+- **RF07**: Consultar detalhes de filmes (gênero, elenco, diretor)  
+
+---
+
+## Regras de Negócio (RN)
+
+- **RN01**: Uma sessão deve estar vinculada a um filme e a um cinema  
+- **RN02**: O horário da sessão deve respeitar a duração do filme  
+- **RN03**: Deve existir intervalo mínimo entre sessões (ex: 15 minutos)  
+- **RN04**: O público não pode exceder a capacidade do cinema  
+- **RN05**: Um filme pode estar em vários cinemas  
+- **RN06**: Cada sessão possui apenas um filme  
